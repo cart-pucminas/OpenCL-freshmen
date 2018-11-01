@@ -34,8 +34,8 @@ int main()
 
 	for (int y = 0; y < qtdplataformas; y++)
 	{
-		 platform = platforms[y];
-		 printf("Plataforma : %d\n", y);
+		platform = platforms[y];
+		printf("Plataforma : %d\n", y);
 
 		for (int w = 0; w < qtddevices; w++)
 		{
@@ -44,21 +44,20 @@ int main()
 			version = device.getInfo<CL_DEVICE_VERSION>();
 
 			printf("Fabricante: ");
-			for (int i = 0; i < 30; i++)
+			for (int i = 0; i < vendor.size() - 1; i++)
 			{
 				printf("%c", vendor[i]);
 			}
 			printf("\n");
 			printf("Versao OpenCL: ");
-			for (int i = 0; i < 30; i++)
+			for (int i = 0; i < version.size() - 1; i++)
 			{
 				printf("%c", version[i]);
 			}
 			printf("\n");
 		}
 	}
-	
+
 	std::cin.get();
 
 }
-
