@@ -1,4 +1,4 @@
-# AEPPAH - OpenCL
+# OpenCL
 
 As aplicações foram desenvolvidas utilizando a IDE Visual Studio Community 2012.
 
